@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "es6",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noImplicitAny": true,
+        "experimentalDecorators": true,
+        "preserveConstEnums": true,
+        "rootDir": "src",
+        "outDir": "src",
+        "sourceMap": true,
+        "lib": [
+            "ES6",
+            "ES2017"
+        ]
+    },
+    "filesGlob": [
+        "typings/**/*.d.ts",
+        "src/**/*.ts",
+        "src/**/*.tsx"
+    ],
+    "exclude": [
+        "node_modules",
+        "built",
+        "src/**/*.spec.ts"
+    ],
+    "compileOnSave": true
+}
