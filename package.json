@@ -6,12 +6,12 @@
     "scripts": {
         "test": "./node_modules/jest/bin/jest.js",
         "tsc": "./node_modules/typescript/bin/tsc --noEmit",
-        "postpublish": "./scripts/postpublish.sh",
+        "postpublish": "env TS_NODE_FILES=true ./node_modules/ts-node/dist/bin.js --project ./tsconfig.json ./scripts/tagVersion.ts",
         "postinstall": "./node_modules/typescript/bin/tsc",
         "webpack:server": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --config ./config/webpack.dev.js --progress --color --watch",
         "webpack:dev": "rm -rf ./dist && ./node_modules/webpack/bin/webpack.js --config ./config/webpack.dev.js --progress --color --watch",
         "webpack:prod": "rm -rf ./dist && ./node_modules/webpack/bin/webpack.js --config ./config/webpack.prod.js --progress --color",
-        "tsn": "./node_modules/ts-node/dist/bin.js --project ./tsconfig.json"
+        "run:ts": "env TS_NODE_FILES=true ./node_modules/ts-node/dist/bin.js --project ./tsconfig.json"
     },
     "jest": {
         "transform": {

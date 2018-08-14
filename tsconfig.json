@@ -1,9 +1,5 @@
 {
     "compilerOptions": {
-        "typeRoots": [
-            "./node_modules/@types",
-            "./typings"
-        ],
         "target": "es6",
         "module": "commonjs",
         "moduleResolution": "node",
@@ -16,15 +12,8 @@
             "ES2017"
         ]
     },
-    "filesGlob": [
-        "typings/**/*.d.ts",
-        "src/**/*.ts",
-        "scripts/**/*.ts"
-    ],
     "exclude": [
-        "node_modules",
-        "built",
-        "src/**/*.spec.ts"
+        "node_modules"
     ],
     "compileOnSave": true
 }

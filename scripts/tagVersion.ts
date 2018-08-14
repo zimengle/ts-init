@@ -3,6 +3,8 @@ import * as path from "path";
 import {execSync} from "child_process";
 import {getLogger} from "log4js";
 
+console.info("123");
+
 const logger = getLogger();
 logger.level = "debug";
 
